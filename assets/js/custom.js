@@ -1,6 +1,4 @@
 (function($){
-    $(document).ready(function(){
-
       // scroll to top after banner is added by Templated core JS
       // if url contains no hash
       // if url contains hash, then look for video and scroll to that video
@@ -21,11 +19,11 @@
               }
               clearInterval(intervaled);
           }
-      });
     });
 
     // scroll to the screen when youtube thumbnail is clicked
     $('.video.col').on('click', function(){
+        var video = $(this).parent('.video');
         _handleIFrameUrlAndScrollToIt($(this).data('youtube'), $(this).data('title'));
     });
 
@@ -121,22 +119,20 @@
           return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
       }
     }
-
-    /* Open when someone clicks on the span element */
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
 })(jQuery);
+
+/* Open when someone clicks on the span element */
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+  event.stopPropagation();
+  jQuery("body").addClass('overlayed');
+  var overlay = event.target.parentNode.parentNode.nextElementSibling;
+  overlay.style.width = "100%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+  event.stopPropagation();
+  jQuery("body").removeClass('overlayed');
+  var overlay = event.target.parentNode;
+  overlay.style.width = "0%";
 }

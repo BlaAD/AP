@@ -1943,7 +1943,7 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
 	input[type="reset"],
 	input[type="button"],
 	button,
-	
+
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -1965,6 +1965,7 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
 		input[type="reset"].alt,
 		input[type="button"].alt,
 		button.alt,
+		
 		.button.alt {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
@@ -2432,6 +2433,7 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
 			}
 .image footer {
 	position:relative;
+	width:100%;
 	min-width: 375px;
 
 
@@ -2469,10 +2471,15 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
+		padding-right:2em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+		text-align: -webkit-left;
+color:black;
+font-style: normal;
+font-size:medium;
 		}
 
 		ul.alt {
@@ -3780,7 +3787,7 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
 		padding: 1em 0 0.5em 0;
 		height:80px;
 	}
-	
+
 
 		#footer > .inner {
 			margin: 0 auto;
@@ -3798,7 +3805,7 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
 			#footer .copyright .icons {
 				margin: 2em 0 0 0;
 			}
-			
+
 		@media screen and (max-width: 1280px) {
 
 			#footer > .inner {
@@ -3878,7 +3885,7 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
 				ul.icons li:last-child {
 					padding-right: 0;
 				}
-        
+
        #footer {
     margin: 2px auto 0 auto;
 
@@ -3946,4 +3953,3 @@ Chosang & Arpan Pokharel - Uthnecha Nepal@charset "UTF-8";
                   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe2e2e2",endColorstr="#fffefefe",GradientType=0);
               }
           }
-      
